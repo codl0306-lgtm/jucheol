@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>주철강업 유한회사 | 철골 제작 · 현장 설치 전문</title>
+<meta name="description" content="주철강업 유한회사 — 철강구조물공사업 면허. 공장·창고·근린생활시설 철골공사, 구조보강, 엘리베이터 프레임·철골 계단 제작 및 설치. 경기도 용인시 처인구 포곡읍 선장2로 10. 도면·견적 ca6811@naver.com">
+<meta name="theme-color" content="#0B1220">
+<meta property="og:title" content="주철강업 유한회사 | 철골 제작 · 현장 설치 전문">
+<meta property="og:description" content="철강구조물공사업 면허 · 15년 업력 · 관급·민간 시공. 철골 제작부터 현장 설치까지. JUCHEOL STEEL CO., LTD.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1220'/%3E%3Cpath d='M8 9h16M8 23h16M16 9v14' stroke='%23F0A23A' stroke-width='3' stroke-linecap='square'/%3E%3C/svg%3E">
+
+<!--
+  ─────────────────────────────────────────────────────────────
+  주철강업 유한회사 (JUCHEOL STEEL CO., LTD.) 홈페이지 v4 (2026-11-18)
+  · v4 목표: 모바일 스크롤 길이를 v3의 절반 이하로. 정보는 상호·사업자번호·메일·주소 중심.
+  · 구성: 히어로 → 주요 사업·실적 → 시공 사진(대표 6장 + 더 보기) → 도면·전화·위치 → 심플 푸터
+  · 단일 파일(index.html) + fonts/ + images/ + assets/
+  ─────────────────────────────────────────────────────────────
+-->
+
+<style>
+/* ── 폰트 ─────────────────────────────────────────────── */
+@font-face{
+  font-family:"Pretendard";
+  src:url("fonts/PretendardVariable.woff2") format("woff2-variations"),
+      url("fonts/PretendardVariable.woff2") format("woff2");
+  font-weight:45 920;
+  font-style:normal;
+  font-display:swap;
+}
+
+/* ── 기본값 ───────────────────────────────────────────── */
+:root{
+  --navy-950:#070B11;
+  --navy-900:#0B1220;
+  --navy-800:#121D2F;
+
+  --paper:#F6F7F9;
+  --white:#FFFFFF;
+
+  --ink:#0F141C;
+  --ink-2:#2C343F;
+  --muted:#6B7480;
+
+  --steel-300:#AEB9C7;
+  --steel-400:#7C8B9E;
+
+  --accent:#F0A23A;
+  --accent-2:#FFC46B;
+
+  --line:#E2E6EB;
+  --line-dark:rgba(255,255,255,.12);
+
+  --nav-h:54px;
+  --maxw:1120px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:calc(var(--nav-h) + 10px);
+}
+@media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0;
+  font-family:"Pretendard",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.62;
+  letter-spacing:-0.01em;
+  color:var(--ink);
+  background:var(--white);
+  -webkit-font-smoothing:antialiased;
+  word-break:keep-all;
+  overflow-wrap:break-word;
+}
+
+img,svg{ display:block; max-width:100%; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,p,ul,ol,figure{ margin:0; }
+ul,ol{ padding:0; list-style:none; }
+button{ font:inherit; color:inherit; }
+[hidden]{ display:none !important; }
+
+:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; border-radius:4px; }
+
+.skip{
+  position:absolute; left:-9999px; top:0; z-index:200;
+  padding:12px 18px; background:var(--accent); color:#1A1205; font-weight:700;
+}
+.skip:focus{ left:12px; top:12px; }
+
+.wrap{
+  width:100%; max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:20px;
+}
+
+/* ── 버튼 ─────────────────────────────────────────────── */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  min-height:48px; padding:0 18px;
+  border:1px solid transparent; border-radius:11px;
+  font-size:15px; font-weight:600; letter-spacing:-0.01em;
+  white-space:nowrap; cursor:pointer;
+  transition:background-color .16s ease, border-color .16s ease, color .16s ease;
+}
+.btn svg{ width:17px; height:17px; flex:none; }
+.btn--primary{ background:var(--accent); color:#1A1205; }
+.btn--primary:hover{ background:var(--accent-2); }
+.btn--ghost{ border-color:rgba(255,255,255,.28); color:#fff; background:rgba(255,255,255,.04); }
+.btn--ghost:hover{ background:rgba(255,255,255,.10); }
+.btn--outline{ border-color:var(--line); color:var(--ink); background:#fff; }
+.btn--outline:hover{ border-color:var(--ink); }
+.btn--sm{ min-height:42px; padding:0 14px; font-size:14px; border-radius:10px; }
+
+/* ── 상단 바 ──────────────────────────────────────────── */
+.nav{
+  position:sticky; top:0; z-index:100;
+  height:var(--nav-h);
+  background:rgba(9,14,22,.9);
+  border-bottom:1px solid var(--line-dark);
+  -webkit-backdrop-filter:saturate(150%) blur(12px);
+  backdrop-filter:saturate(150%) blur(12px);
+}
+.nav__inner{ height:100%; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.brand{ display:flex; align-items:center; gap:9px; color:#fff; min-width:0; }
+.brand__mark{
+  width:30px; height:30px; flex:none;
+  display:grid; place-items:center;
+  border:1px solid rgba(240,162,58,.5); border-radius:8px;
+  background:rgba(240,162,58,.12);
+}
+.brand__mark svg{ width:16px; height:16px; }
+.brand__name{ display:block; font-size:15.5px; font-weight:700; letter-spacing:-0.02em; line-height:1.2; }
+.brand__en{ display:block; font-size:8.5px; font-weight:600; letter-spacing:.18em; color:var(--steel-400); }
+.nav__call{
+  display:inline-flex; align-items:center; gap:6px;
+  height:36px; padding:0 11px;
+  border:1px solid rgba(240,162,58,.5); border-radius:8px;
+  background:rgba(240,162,58,.12); color:var(--accent-2);
+  font-size:12.5px; font-weight:700; font-variant-numeric:tabular-nums;
+}
+.nav__call span{ display:inline; }
+.nav__call svg{ width:14px; height:14px; }
+
+/* ── 히어로 ───────────────────────────────────────────── */
+.hero{
+  position:relative; isolation:isolate; overflow:hidden;
+  background:var(--navy-900); color:#fff;
+  padding-block:30px 32px;
+}
+.hero__photo{
+  position:absolute; inset:0; z-index:-3;
+  background:url("images/hero-site.jpg") 60% 45% / cover no-repeat;
+}
+.hero__shade{
+  position:absolute; inset:0; z-index:-2;
+  background:
+    linear-gradient(180deg,rgba(6,10,16,.78) 0%,rgba(6,10,16,.6) 42%,rgba(7,11,17,.9) 100%),
+    linear-gradient(95deg,rgba(6,10,16,.82) 0%,rgba(6,10,16,.3) 70%,rgba(6,10,16,.5) 100%);
+}
+.hero__tag{
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:11px; font-weight:600; letter-spacing:.1em;
+  color:var(--accent-2);
+}
+.hero__tag i{ width:5px; height:5px; border-radius:50%; background:var(--accent); flex:none; }
+.hero h1{
+  margin-top:12px;
+  font-size:30px; line-height:1.22; font-weight:800; letter-spacing:-0.04em;
+}
+.hero__sub{
+  margin-top:6px;
+  font-size:16px; font-weight:600; letter-spacing:-0.02em;
+  color:#fff;
+}
+.hero__sub em{ font-style:normal; color:var(--accent); }
+.hero__desc{
+  margin-top:12px; max-width:46ch;
+  font-size:14px; line-height:1.72; color:var(--steel-300);
+}
+.hero__actions{
+  margin-top:20px;
+  display:grid; grid-template-columns:1fr 1fr; gap:8px;
+}
+.hero__actions .btn{ padding:0 10px; font-size:14.5px; }
+.hero__note{
+  margin-top:12px;
+  font-size:12px; color:var(--steel-400);
+  font-variant-numeric:tabular-nums;
+}
+.hero__note b{ color:var(--steel-300); font-weight:600; }
+
+/* ── 공통 섹션 ────────────────────────────────────────── */
+.section{ padding-block:32px; }
+.section--paper{ background:var(--paper); }
+.sec-label{
+  display:block;
+  font-size:10.5px; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:7px;
+}
+.sec-title{
+  font-size:20px; font-weight:800; letter-spacing:-0.035em; line-height:1.3;
+}
+.sec-desc{
+  margin-top:6px; font-size:13.5px; color:var(--muted); line-height:1.6;
+}
+.sub-title{
+  margin-top:24px; margin-bottom:10px;
+  font-size:13px; font-weight:700; letter-spacing:.02em; color:var(--ink-2);
+  display:flex; align-items:center; gap:8px;
+}
+.sub-title span{ font-weight:500; font-size:11.5px; color:var(--muted); letter-spacing:0; }
+
+/* ── 주요 사업 ────────────────────────────────────────── */
+.biz{ display:grid; gap:8px; margin-top:14px; }
+.biz__item{
+  display:flex; align-items:center; gap:12px;
+  padding:13px 14px;
+  border:1px solid var(--line); border-radius:12px; background:#fff;
+}
+.biz__icon{ flex:none; width:22px; height:22px; color:var(--accent); }
+.biz__icon svg{ width:22px; height:22px; }
+.biz__t{ font-size:15px; font-weight:700; letter-spacing:-0.02em; }
+.biz__d{ font-size:12.5px; color:var(--muted); margin-top:1px; line-height:1.45; }
+
+/* ── 실적 ─────────────────────────────────────────────── */
+.track{ display:grid; grid-template-columns:1fr 1fr; gap:7px; }
+.track li{
+  padding:9px 11px;
+  border-radius:9px; background:var(--paper);
+  border:1px solid rgba(0,0,0,.03);
+}
+.track b{ display:block; font-size:13px; font-weight:600; letter-spacing:-0.02em; line-height:1.35; }
+.track span{ display:block; font-size:11px; color:#5E6773; margin-top:2px; }
+.section--paper .track li{ background:#fff; border-color:var(--line); }
+
+/* ── 시공 사진 ────────────────────────────────────────── */
+.gal__head{ display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
+.gal__head .cnt{
+  font-size:11.5px; font-weight:600; color:var(--muted);
+  font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.gal{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:14px; }
+.gal__card{ min-width:0; }
+.gal__btn{
+  display:block; width:100%; padding:0; border:0; background:none; cursor:zoom-in;
+  border-radius:10px; overflow:hidden;
+  position:relative;
+}
+.gal__btn img{
+  width:100%; height:auto; aspect-ratio:4/3; object-fit:cover;
+  transition:transform .3s ease;
+}
+.gal__btn:hover img{ transform:scale(1.03); }
+.gal__cap{
+  margin-top:5px;
+  font-size:12px; font-weight:600; color:var(--ink-2); letter-spacing:-0.02em;
+  line-height:1.35;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.gal__more{
+  display:flex; align-items:center; justify-content:center; gap:7px;
+  width:100%; height:46px; margin-top:16px;
+  border:1px solid var(--line); border-radius:11px; background:#fff;
+  font-size:14.5px; font-weight:600; cursor:pointer;
+  color:var(--ink);
+}
+.gal__more:hover{ border-color:var(--ink); }
+.gal__more svg{ width:16px; height:16px; transition:transform .2s ease; }
+.gal__more[aria-expanded="true"] svg{ transform:rotate(180deg); }
+.gal__more .num{ color:var(--muted); font-weight:500; font-size:13px; }
+
+/* ── 문의 ─────────────────────────────────────────────── */
+.contact__lead{ margin-top:6px; font-size:13.5px; color:var(--muted); }
+.card{
+  margin-top:14px;
+  border:1px solid var(--line); border-radius:14px; background:#fff;
+  padding:15px;
+}
+.card__k{
+  display:flex; align-items:center; gap:7px;
+  font-size:11.5px; font-weight:700; letter-spacing:.02em; color:var(--muted);
+}
+.card__k svg{ width:15px; height:15px; color:var(--accent); }
+.mail__v{
+  margin-top:7px;
+  font-size:19px; font-weight:800; letter-spacing:-0.03em;
+  font-variant-numeric:tabular-nums;
+  word-break:break-all;
+}
+.mail__actions{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:11px; }
+.mail__actions .btn{ padding:0 8px; font-size:13.5px; }
+
+.phones{ margin-top:10px; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#fff; }
+.phones a{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  padding:12px 15px;
+  border-bottom:1px solid var(--line);
+}
+.phones a:last-child{ border-bottom:0; }
+.phones .k{ font-size:12.5px; color:var(--muted); }
+.phones .v{
+  font-size:16.5px; font-weight:700; letter-spacing:-0.02em;
+  font-variant-numeric:tabular-nums;
+}
+.phones .go{
+  display:inline-flex; align-items:center; gap:4px;
+  font-size:12px; font-weight:700; color:var(--accent);
+}
+.phones .go svg{ width:13px; height:13px; }
+.phones a:hover{ background:#FBFBFC; }
+
+.addr__v{ margin-top:7px; font-size:15.5px; font-weight:700; letter-spacing:-0.02em; line-height:1.45; }
+.addr__actions{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:11px; }
+.addr__actions .btn{ padding:0 8px; font-size:13.5px; }
+
+.sms{ margin-top:10px; border:1px solid var(--line); border-radius:12px; background:#fff; }
+.sms summary{
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  padding:13px 15px; cursor:pointer; list-style:none;
+  font-size:14px; font-weight:600;
+}
+.sms summary::-webkit-details-marker{ display:none; }
+.sms summary .plus{
+  width:18px; height:18px; flex:none; position:relative; color:var(--muted);
+}
+.sms summary .plus::before,
+.sms summary .plus::after{
+  content:""; position:absolute; left:50%; top:50%;
+  width:12px; height:1.6px; background:currentColor; border-radius:2px;
+  transform:translate(-50%,-50%);
+}
+.sms summary .plus::after{ transform:translate(-50%,-50%) rotate(90deg); transition:transform .2s ease; }
+.sms[open] summary .plus::after{ transform:translate(-50%,-50%) rotate(0deg); }
+.sms__body{ padding:0 15px 15px; border-top:1px solid var(--line); }
+.sms__body p.note{ margin-top:10px; font-size:12px; color:var(--muted); }
+.field{ display:block; margin-top:10px; }
+.field span{ display:block; font-size:12px; font-weight:600; color:var(--muted); margin-bottom:4px; }
+.field input,.field textarea{
+  width:100%; padding:11px 12px;
+  border:1px solid var(--line); border-radius:9px;
+  font:inherit; font-size:14.5px; color:var(--ink);
+  background:#FBFBFC;
+}
+.field input:focus,.field textarea:focus{ outline:none; border-color:var(--accent); background:#fff; }
+.field textarea{ min-height:74px; resize:vertical; }
+.sms__submit{ width:100%; margin-top:12px; }
+
+/* ── 푸터 ─────────────────────────────────────────────── */
+.footer{ background:var(--navy-950); color:var(--steel-400); padding-block:22px 26px; }
+.footer__name{
+  display:flex; align-items:center; gap:8px;
+  font-size:14.5px; font-weight:700; color:#fff; letter-spacing:-0.02em;
+}
+.footer__name svg{ width:15px; height:15px; color:var(--accent); flex:none; }
+.footer ul{ margin-top:10px; }
+.footer li{
+  font-size:12.5px; line-height:1.75; color:var(--steel-400);
+  font-variant-numeric:tabular-nums;
+}
+.footer li b{ color:var(--steel-300); font-weight:600; }
+.footer a:hover{ color:#fff; }
+.desk-only{ display:none; }
+
+/* ── 라이트박스 ───────────────────────────────────────── */
+.lightbox{
+  position:fixed; inset:0; z-index:300;
+  display:grid; place-items:center;
+  padding:20px;
+  background:rgba(5,8,12,.94);
+}
+.lightbox figure{ margin:0; max-width:min(1100px,100%); }
+.lightbox img{
+  max-width:100%; max-height:74vh; width:auto; height:auto;
+  margin-inline:auto; border-radius:8px;
+}
+.lightbox__cap{
+  margin-top:12px; text-align:center; color:#fff;
+  font-size:14px; font-weight:600;
+}
+.lightbox__cap span{ display:block; }
+.lightbox__cap .d{ margin-top:3px; font-size:12.5px; font-weight:400; color:var(--steel-400); }
+.lb__btn{
+  position:absolute; display:grid; place-items:center;
+  width:42px; height:42px; border-radius:50%;
+  border:1px solid var(--line-dark); background:rgba(255,255,255,.08); color:#fff;
+  font-size:19px; line-height:1; cursor:pointer;
+}
+.lb__close{ top:14px; right:14px; }
+.lb__prev{ left:10px; top:50%; transform:translateY(-50%); }
+.lb__next{ right:10px; top:50%; transform:translateY(-50%); }
+
+/* ── 데스크톱 ─────────────────────────────────────────── */
+@media (min-width:860px){
+  :root{ --nav-h:68px; }
+  .wrap{ padding-inline:32px; }
+  .brand__mark{ width:34px; height:34px; }
+  .brand__name{ font-size:16.5px; }
+  .brand__en{ font-size:9px; }
+  .nav__call{ height:40px; padding:0 16px; font-size:14px; }
+  .nav__call svg{ width:15px; height:15px; }
+
+  .hero{ padding-block:64px 60px; }
+  .hero__photo{ background-position:64% 48%; }
+  .hero__shade{
+    background:
+      linear-gradient(100deg,rgba(6,10,16,.93) 0%,rgba(6,10,16,.78) 34%,rgba(6,10,16,.3) 72%,rgba(6,10,16,.55) 100%),
+      linear-gradient(180deg,rgba(7,11,17,.5) 0%,rgba(7,11,17,.05) 30%,rgba(7,11,17,.7) 88%,var(--navy-900) 100%);
+  }
+  .hero__tag{ font-size:12px; letter-spacing:.12em; }
+  .hero h1{ margin-top:16px; font-size:52px; letter-spacing:-0.045em; }
+  .hero__sub{ margin-top:10px; font-size:22px; }
+  .hero__desc{ margin-top:14px; font-size:16px; max-width:52ch; line-height:1.75; }
+  .hero__actions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .hero__actions .btn{ min-height:52px; padding:0 24px; font-size:15.5px; }
+  .hero__note{ margin-top:16px; font-size:13px; }
+
+  .section{ padding-block:60px; }
+  .sec-title{ font-size:30px; }
+  .sec-desc{ font-size:15px; margin-top:8px; }
+  .sec-label{ font-size:11.5px; margin-bottom:9px; }
+  .sub-title{ margin-top:32px; margin-bottom:12px; font-size:14px; }
+
+  .biz{ grid-template-columns:repeat(3,1fr); gap:12px; margin-top:18px; }
+  .biz__item{ padding:18px 18px; align-items:flex-start; }
+  .biz__t{ font-size:16px; }
+  .biz__d{ font-size:13.5px; margin-top:4px; line-height:1.55; }
+
+  .track{ grid-template-columns:repeat(4,1fr); gap:9px; }
+  .track li{ padding:12px 14px; }
+  .track b{ font-size:14px; }
+  .track span{ font-size:11.5px; }
+
+  .gal{ grid-template-columns:repeat(3,1fr); gap:16px; margin-top:18px; }
+  .gal__cap{ font-size:13.5px; margin-top:7px; }
+  .gal__more{ width:auto; min-width:300px; max-width:360px; margin-inline:auto; margin-top:24px; }
+
+  .contact__grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:20px 28px; align-items:start; }
+  .contact__head{ grid-column:1 / -1; }
+  .card{ margin-top:0; padding:20px; }
+  .mail__v{ font-size:22px; }
+  .mail__actions{ max-width:420px; }
+  .phones{ margin-top:12px; }
+  .phones a{ padding:14px 18px; }
+  .phones .v{ font-size:18px; }
+  .addr__v{ font-size:17px; }
+  .addr__actions{ max-width:420px; }
+  .sms{ margin-top:12px; }
+  .contact__col--left .card{ margin-bottom:12px; }
+
+  .footer{ padding-block:28px 30px; }
+  .footer__inner{ display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+  .footer ul{ margin-top:0; display:flex; flex-wrap:wrap; align-items:center; gap:6px 14px; }
+  .footer li{ font-size:13px; }
+  .footer li + li::before{ content:"·"; margin-right:12px; color:rgba(255,255,255,.22); }
+  .desk-only{ display:block; margin-top:12px; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#business">본문으로 바로 가기</a>
+
+<!-- ══════════ 상단 바 ══════════ -->
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a class="brand" href="#top" aria-label="주철강업 유한회사 홈">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F0A23A" stroke-width="1.9" stroke-linecap="square">
+          <path d="M4 5h16M4 19h16M12 5v14"/>
+        </svg>
+      </span>
+      <span>
+        <span class="brand__name">주철강업 유한회사</span>
+        <span class="brand__en">JUCHEOL STEEL</span>
+      </span>
+    </a>
+
+    <a class="nav__call" href="tel:0313320138">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4.5 3.5h4l1.6 4-2.3 1.6a12.5 12.5 0 0 0 6.1 6.1l1.6-2.3 4 1.6v4a1.6 1.6 0 0 1-1.8 1.6C10.6 19.4 4.6 13.4 3 5.3A1.6 1.6 0 0 1 4.5 3.5Z"/>
+      </svg>
+      <span>031-332-0138</span>
+    </a>
+  </div>
+</header>
+
+<!-- ══════════ 히어로 ══════════ -->
+<section class="hero" id="hero">
+  <div class="hero__photo" aria-hidden="true"></div>
+  <div class="hero__shade" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <span class="hero__tag"><i></i>철강구조물공사업 면허 · 15년 업력</span>
+    <h1>주철강업 유한회사</h1>
+    <p class="hero__sub">철골 제작부터 <em>현장 설치까지</em></p>
+    <p class="hero__desc">
+      공장·창고·근린생활시설 철골공사, 기존 건축물 구조보강, 엘리베이터 프레임과 철골 계단까지.
+      도면 검토부터 제작·설치까지 한 창구에서 진행합니다.
+    </p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="tel:0313320138">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4.5 3.5h4l1.6 4-2.3 1.6a12.5 12.5 0 0 0 6.1 6.1l1.6-2.3 4 1.6v4a1.6 1.6 0 0 1-1.8 1.6C10.6 19.4 4.6 13.4 3 5.3A1.6 1.6 0 0 1 4.5 3.5Z"/>
+        </svg>
+        전화 견적 문의
+      </a>
+      <a class="btn btn--ghost" href="assets/주철강업_공사도급지명원_2026.pdf" download="주철강업_공사도급지명원_2026.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/>
+        </svg>
+        지명원 다운로드
+      </a>
+    </div>
+
+    <p class="hero__note">도면 접수 <b>ca6811@naver.com</b> · 직통 <b>010-7388-2348</b></p>
+  </div>
+</section>
+
+<!-- ══════════ 주요 사업 · 실적 ══════════ -->
+<section class="section" id="business">
+  <div class="wrap">
+    <span class="sec-label">Business</span>
+    <h2 class="sec-title">주요 사업</h2>
+    <p class="sec-desc">필요한 공정만 따로 의뢰하셔도 됩니다.</p>
+
+    <ul class="biz">
+      <li class="biz__item">
+        <span class="biz__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7h18M5 7v6h14V7"/><path d="M9 13v5M15 13v5"/><path d="M4 21h16"/><path d="M9 3v4M15 3v4"/>
+          </svg>
+        </span>
+        <div>
+          <div class="biz__t">공장 · 창고 · 근생 철골공사</div>
+          <div class="biz__d">H빔 기둥·보 골조 제작 및 설치</div>
+        </div>
+      </li>
+      <li class="biz__item">
+        <span class="biz__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21V8l6-4 6 4v13"/><path d="M15 21V11l6-3v13"/><path d="M3 21h18"/><path d="M7 11h2M7 15h2M11 11v4"/>
+          </svg>
+        </span>
+        <div>
+          <div class="biz__t">기존 건축물 구조보강</div>
+          <div class="biz__d">보강 상세도 기준 보강재 제작·설치</div>
+        </div>
+      </li>
+      <li class="biz__item">
+        <span class="biz__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 20h16"/><path d="M7 20v-6h10v6"/><path d="M12 3v5"/><path d="M12 8c0 3-3 3-3 6h6c0-3-3-3-3-6Z"/>
+          </svg>
+        </span>
+        <div>
+          <div class="biz__t">엘리베이터 프레임 · 철골 계단</div>
+          <div class="biz__d">승강로 프레임, 계단, 소부재 제작</div>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="sub-title">주요 시공 실적 <span>대표 현장</span></h3>
+    <ul class="track">
+      <li><b>창원시립미술관</b><span>관급 · 철골공사</span></li>
+      <li><b>제55보병사단</b><span>관급 · 철골 제작·설치</span></li>
+      <li><b>육영재단 어린이회관</b><span>2025 · H빔 제작·설치</span></li>
+      <li><b>남양주 배양리 물류창고</b><span>2026 · 철골 제작·설치</span></li>
+      <li><b>의왕 왕곡동</b><span>H빔 철골 제작·설치</span></li>
+      <li><b>중대동 근린생활시설</b><span>2024 · 철골 제작·설치</span></li>
+      <li><b>대전 영화세트장</b><span>2020 · 철골 제작·납품</span></li>
+      <li><b>성수동 근린생활시설</b><span>2020 · H빔 철골 제작</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══════════ 시공 사진 ══════════ -->
+<section class="section section--paper" id="photos">
+  <div class="wrap">
+    <div class="gal__head">
+      <div>
+        <span class="sec-label">Projects</span>
+        <h2 class="sec-title">시공 사진</h2>
+      </div>
+      <span class="cnt">전체 15컷</span>
+    </div>
+
+    <div class="gal" id="galleryGrid">
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="앵커볼트 용접 베이스플레이트" data-desc="기둥 베이스플레이트에 앵커볼트를 용접한 제작물" aria-label="앵커볼트 용접 베이스플레이트 사진 크게 보기">
+          <img src="images/fab-stud-plate.jpg" alt="기둥 베이스플레이트에 앵커볼트를 용접해 제작한 모습" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">앵커볼트 용접 베이스플레이트</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="공장 내 H빔 조립 가공" data-desc="공장에서 H빔 부재를 조립·가공하는 작업" aria-label="공장 내 H빔 조립 가공 사진 크게 보기">
+          <img src="images/fab-shop-beam.jpg" alt="공장에서 H빔 부재를 조립·가공하는 작업" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">공장 내 H빔 조립 가공</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="도장 마친 H빔 조립 부재" data-desc="가공과 도장을 마치고 출하를 기다리는 부재" aria-label="도장 마친 H빔 조립 부재 사진 크게 보기">
+          <img src="images/fab-coated-beam.jpg" alt="가공과 도장을 마친 H빔 조립 부재" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">도장 마친 H빔 조립 부재</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="사상 도장 마친 대형 보 부재" data-desc="출하를 기다리는 대형 보 부재" aria-label="사상 도장 마친 대형 보 부재 사진 크게 보기">
+          <img src="images/yard-primed-beam.jpg" alt="공장 야적장에 나란히 놓인 사상·도장 마친 대형 보 부재" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">사상 도장 마친 대형 보 부재</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="철골 부재 야적 및 출하 대기" data-desc="야적장의 철골 부재와 트럭 양중" aria-label="철골 부재 야적 및 출하 대기 사진 크게 보기">
+          <img src="images/yard-steel-yard.jpg" alt="트럭 양중과 함께 출하를 기다리는 철골 부재 야적장" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">철골 부재 야적 및 출하 대기</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="지게차 부재 이동 작업" data-desc="지게차로 H빔 부재를 이동하는 야적장" aria-label="지게차 부재 이동 작업 사진 크게 보기">
+          <img src="images/yard-forklift.jpg" alt="지게차로 H빔 부재를 이동하는 야적장 작업" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">지게차 부재 이동 작업</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="철골 계단 제작" data-desc="도면에 맞춰 제작을 마친 철골 계단 부재" aria-label="철골 계단 제작 사진 크게 보기">
+          <img src="images/yard-truss-member.jpg" alt="가공·용접을 마쳐 출하를 기다리는 철골 계단 부재" width="1206" height="890" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">철골 계단 제작</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="부재 적재 출하" data-desc="완성된 철골 부재를 적재해 출하" aria-label="부재 적재 출하 사진 크게 보기">
+          <img src="images/yard-loaded-truck.jpg" alt="완성된 철골 부재를 적재해 출하하는 트럭" width="1125" height="1500" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">부재 적재 출하</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="3층 규모 철골 골조 전경" data-desc="기둥·보 조립을 마친 다층 철골 골조" aria-label="3층 규모 철골 골조 전경 사진 크게 보기">
+          <img src="images/site-frame-wide.jpg" alt="기둥과 보 조립을 마친 3층 규모의 철골 골조 전경" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">3층 규모 철골 골조 전경</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="철골 골조 옆모습" data-desc="기둥과 보가 맞물린 다층 골조" aria-label="철골 골조 옆모습 사진 크게 보기">
+          <img src="images/site-frame-side.jpg" alt="다층 철골 골조의 옆모습" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">철골 골조 옆모습</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="1">
+        <button type="button" class="gal__btn" data-title="기둥·보 양중 설치" data-desc="크레인을 이용한 기둥·보 양중" aria-label="기둥·보 양중 설치 사진 크게 보기">
+          <img src="images/site-frame-lift.jpg" alt="크레인으로 기둥과 보를 세우는 양중 작업 현장" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">기둥·보 양중 설치</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="지게차 철골 트러스 설치" data-desc="지붕 트러스 부재 설치 현장" aria-label="지게차 철골 트러스 설치 사진 크게 보기">
+          <img src="images/site-truss-lift.jpg" alt="지게차로 지붕 트러스 부재를 설치하는 현장" width="1125" height="1500" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">지게차 철골 트러스 설치</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="붉은 도장 철골 골조 시공" data-desc="지붕 철골 골조 설치 현장" aria-label="붉은 도장 철골 골조 시공 사진 크게 보기">
+          <img src="images/site-red-frame.jpg" alt="붉은 도장 마친 공장·창고 지붕 철골 골조 설치 현장" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">붉은 도장 철골 골조 시공</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="가설 무대 철골 골조 내부" data-desc="대형 가설 골조 내부 시공" aria-label="가설 무대 철골 골조 내부 사진 크게 보기">
+          <img src="images/site-frame-inside.jpg" alt="가설 무대 철골 골조 내부 시공 모습" width="1125" height="1500" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">가설 무대 철골 골조 내부</figcaption>
+      </figure>
+
+      <figure class="gal__card" data-top="0">
+        <button type="button" class="gal__btn" data-title="판넬 마감 철골 건물 실내" data-desc="판넬과 창호 시공을 마친 실내" aria-label="판넬 마감 철골 건물 실내 사진 크게 보기">
+          <img src="images/site-interior-done.jpg" alt="벽체·천장 판넬과 창호 시공을 마친 철골 건물 실내" width="1500" height="1125" loading="lazy" decoding="async">
+        </button>
+        <figcaption class="gal__cap">판넬 마감 철골 건물 실내</figcaption>
+      </figure>
+
+    </div>
+
+    <button type="button" class="gal__more" id="galleryMore" aria-controls="galleryGrid" aria-expanded="false">
+      <span id="galleryMoreLabel">시공 사진 더 보기</span>
+      <span class="num" id="galleryMoreCnt">(+9장)</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══════════ 도면 · 전화 · 위치 ══════════ -->
+<section class="section" id="contact">
+  <div class="wrap contact__grid">
+
+    <div class="contact__head">
+      <span class="sec-label">Contact</span>
+      <h2 class="sec-title">도면 · 견적 문의</h2>
+      <p class="contact__lead">도면(CAD·PDF)과 현장 위치를 보내 주시면 검토 후 회신드립니다.</p>
+    </div>
+
+    <div class="contact__col--left">
+      <div class="card">
+        <span class="card__k">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+          </svg>
+          도면 · 견적 메일
+        </span>
+        <p class="mail__v">ca6811@naver.com</p>
+        <div class="mail__actions">
+          <button type="button" class="btn btn--outline btn--sm" data-copy="ca6811@naver.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+            </svg>
+            주소 복사
+          </button>
+          <a class="btn btn--primary btn--sm" href="mailto:ca6811@naver.com?subject=%5B%EC%A3%BC%EC%B2%A0%EA%B0%95%EC%97%85%5D%20%EC%B2%A0%EA%B3%A8%20%EC%A0%9C%EC%9E%91%C2%B7%EC%84%A4%EC%B9%98%20%EA%B2%AC%EC%A0%81%2F%EB%8F%84%EB%A9%B4%20%EB%AC%B8%EC%9D%98">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>
+            </svg>
+            메일 보내기
+          </a>
+        </div>
+      </div>
+
+      <div class="phones">
+        <a href="tel:0313320138">
+          <span>
+            <span class="k">대표전화</span>
+            <span class="v" style="display:block">031-332-0138</span>
+          </span>
+          <span class="go">
+            전화
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="tel:01073882348">
+          <span>
+            <span class="k">직통 상담</span>
+            <span class="v" style="display:block">010-7388-2348</span>
+          </span>
+          <span class="go">
+            전화
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a href="tel:01052282347">
+          <span>
+            <span class="k">현장 · 견적</span>
+            <span class="v" style="display:block">010-5228-2347</span>
+          </span>
+          <span class="go">
+            전화
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact__col--right">
+      <div class="card">
+        <span class="card__k">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/>
+          </svg>
+          공장 위치
+        </span>
+        <p class="addr__v">경기도 용인시 처인구<br>포곡읍 선장2로 10</p>
+        <div class="addr__actions">
+          <a class="btn btn--primary btn--sm" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%B2%98%EC%9D%B8%EA%B5%AC%20%ED%8F%AC%EA%B3%A1%EC%9D%8D%20%EC%84%A0%EC%9E%A52%EB%A1%9C%2010" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            네이버 지도
+          </a>
+          <button type="button" class="btn btn--outline btn--sm" data-copy="경기도 용인시 처인구 포곡읍 선장2로 10">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/>
+            </svg>
+            주소 복사
+          </button>
+        </div>
+      </div>
+
+      <div class="card desk-only">
+        <span class="card__k">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/>
+          </svg>
+          공사도급 지명원
+        </span>
+        <p class="addr__v">회사소개서 · 2026. 08 발행</p>
+        <a class="btn btn--outline btn--sm" style="margin-top:11px" href="assets/주철강업_공사도급지명원_2026.pdf" download="주철강업_공사도급지명원_2026.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 21h16"/>
+          </svg>
+          지명원 PDF 다운로드
+        </a>
+      </div>
+
+      <details class="sms">
+        <summary>
+          문자로 문의 남기기
+          <span class="plus" aria-hidden="true"></span>
+        </summary>
+        <div class="sms__body">
+          <form id="quoteForm">
+            <label class="field">
+              <span>연락처</span>
+              <input type="tel" id="qPhone" name="phone" placeholder="010-0000-0000" autocomplete="tel">
+            </label>
+            <label class="field">
+              <span>현장 위치</span>
+              <input type="text" id="qSite" name="site" placeholder="예) 용인시 처인구 ○○동">
+            </label>
+            <label class="field">
+              <span>문의 내용</span>
+              <textarea id="qBody" name="body" placeholder="예) 창고 철골 골조 제작·설치 견적 문의드립니다."></textarea>
+            </label>
+            <button class="btn btn--primary sms__submit" type="submit">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 4L3 11l7 2.5L12.5 21 21 4Z"/><path d="M10 13.5L21 4"/>
+              </svg>
+              문자로 문의 보내기
+            </button>
+            <p class="note">문자 앱이 열리고 내용이 채워집니다. 전송 버튼은 직접 눌러 주세요.</p>
+          </form>
+        </div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════ 푸터 ══════════ -->
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div class="footer__name">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true">
+        <path d="M4 5h16M4 19h16M12 5v14"/>
+      </svg>
+      주철강업 유한회사
+    </div>
+    <ul>
+      <li><b>사업자등록번호</b> 680-87-01577</li>
+      <li><a href="mailto:ca6811@naver.com">ca6811@naver.com</a></li>
+      <li>경기도 용인시 처인구 포곡읍 선장2로 10</li>
+    </ul>
+  </div>
+</footer>
+
+<a id="smsLink" hidden aria-hidden="true"></a>
+
+<!-- 라이트박스 -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="사진 크게 보기" hidden>
+  <button type="button" class="lb__btn lb__close" id="lbClose" aria-label="닫기">✕</button>
+  <button type="button" class="lb__btn lb__prev" id="lbPrev" aria-label="이전 사진">‹</button>
+  <figure>
+    <img id="lbImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <figcaption class="lightbox__cap">
+      <span id="lbTitle"></span>
+      <span class="d" id="lbDesc"></span>
+    </figcaption>
+  </figure>
+  <button type="button" class="lb__btn lb__next" id="lbNext" aria-label="다음 사진">›</button>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── 시공 사진: 대표 6장만 먼저, 더 보기로 나머지 9장 펼침 (모바일·PC 공통) ── */
+  var grid     = document.getElementById('galleryGrid');
+  var cards    = Array.prototype.slice.call(grid.querySelectorAll('.gal__card'));
+  var moreBtn  = document.getElementById('galleryMore');
+  var moreLbl  = document.getElementById('galleryMoreLabel');
+  var moreCnt  = document.getElementById('galleryMoreCnt');
+  var topCount = cards.filter(function (c) { return c.getAttribute('data-top') === '1'; }).length;
+  var rest     = cards.length - topCount;
+  var expanded = false;
+
+  function layout() {
+    cards.forEach(function (card) {
+      var top = card.getAttribute('data-top') === '1';
+      card.hidden = !expanded && !top;
+    });
+
+    if (rest > 0) {
+      moreBtn.hidden = false;
+      moreBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      moreLbl.textContent = expanded ? '시공 사진 접기' : '시공 사진 더 보기';
+      moreCnt.textContent = '(+' + rest + '장)';
+      moreCnt.hidden = expanded;
+    } else {
+      moreBtn.hidden = true;
+    }
+  }
+
+  moreBtn.addEventListener('click', function () {
+    expanded = !expanded;
+    layout();
+  });
+
+  layout();
+
+  /* ── 라이트박스 ── */
+  var lb      = document.getElementById('lightbox');
+  var lbImg   = document.getElementById('lbImg');
+  var lbTitle = document.getElementById('lbTitle');
+  var lbDesc  = document.getElementById('lbDesc');
+  var shown   = [];
+  var idx     = 0;
+
+  function collect() {
+    shown = cards.filter(function (c) { return !c.hidden; })
+                 .map(function (c) { return c.querySelector('.gal__btn'); });
+  }
+
+  function render() {
+    var btn = shown[idx];
+    if (!btn) return;
+    var img = btn.querySelector('img');
+    lbImg.src = img.getAttribute('src');
+    lbImg.alt = img.getAttribute('alt') || '';
+    lbTitle.textContent = btn.getAttribute('data-title') || '';
+    lbDesc.textContent  = btn.getAttribute('data-desc') || '';
+  }
+
+  function open(btn) {
+    collect();
+    idx = Math.max(0, shown.indexOf(btn));
+    render();
+    lb.hidden = false;
+    document.body.style.overflow = 'hidden';
+    document.getElementById('lbClose').focus();
+  }
+
+  function close() {
+    lb.hidden = true;
+    lbImg.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+    document.body.style.overflow = '';
+  }
+
+  function move(step) {
+    if (!shown.length) return;
+    idx = (idx + step + shown.length) % shown.length;
+    render();
+  }
+
+  cards.forEach(function (card) {
+    card.querySelector('.gal__btn').addEventListener('click', function () {
+      open(this);
+    });
+  });
+
+  document.getElementById('lbClose').addEventListener('click', close);
+  document.getElementById('lbPrev').addEventListener('click', function () { move(-1); });
+  document.getElementById('lbNext').addEventListener('click', function () { move(1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !lb.hidden) close();
+    if (lb.hidden) return;
+    if (e.key === 'ArrowLeft') move(-1);
+    if (e.key === 'ArrowRight') move(1);
+  });
+
+  /* ── 복사 버튼 (이메일 주소 · 주소) ── */
+  function copyText(text) {
+    function fallback() {
+      return new Promise(function (resolve, reject) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); resolve(); }
+        catch (err) { reject(err); }
+        document.body.removeChild(ta);
+      });
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).catch(fallback);
+    }
+    return fallback();
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (btn) {
+    var original = btn.innerHTML;
+    btn.addEventListener('click', function () {
+      copyText(btn.getAttribute('data-copy')).then(function () {
+        btn.innerHTML = '✓ 복사됨';
+        btn.disabled = true;
+        setTimeout(function () {
+          btn.innerHTML = original;
+          btn.disabled = false;
+        }, 1600);
+      }).catch(function () {});
+    });
+  });
+
+  /* ── 문자 문의 ── */
+  var form = document.getElementById('quoteForm');
+  var SMS_TO = '01073882348';
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    var phone = document.getElementById('qPhone').value.trim();
+    var site  = document.getElementById('qSite').value.trim();
+    var body  = document.getElementById('qBody').value.trim();
+
+    if (!phone && !body) {
+      document.getElementById('qPhone').focus();
+      return;
+    }
+
+    var lines = ['[주철강업 철골 견적 문의]'];
+    if (phone) lines.push('연락처: ' + phone);
+    if (site)  lines.push('현장: ' + site);
+    if (body)  lines.push('내용: ' + body);
+
+    var link = document.getElementById('smsLink');
+    link.href = 'sms:' + SMS_TO + '?&body=' + encodeURIComponent(lines.join('\n'));
+    link.click();
+  });
+})();
+</script>
+</body>
+</html>
