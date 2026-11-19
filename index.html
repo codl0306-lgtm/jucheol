@@ -279,6 +279,13 @@ button{ font:inherit; color:inherit; }
 
 /* ── 문의 ─────────────────────────────────────────────── */
 .contact__lead{ margin-top:6px; font-size:13.5px; color:var(--muted); }
+.contact__note{
+  display:flex; align-items:flex-start; gap:7px;
+  margin-top:9px; font-size:12.5px; line-height:1.55; color:var(--ink-2);
+  letter-spacing:-0.01em;
+}
+.contact__note svg{ width:14px; height:14px; flex:none; color:var(--accent); margin-top:2px; }
+.contact__note b{ font-weight:700; color:var(--ink); }
 .card{
   margin-top:14px;
   border:1px solid var(--line); border-radius:14px; background:#fff;
@@ -717,6 +724,10 @@ button{ font:inherit; color:inherit; }
       <span class="sec-label">Contact</span>
       <h2 class="sec-title">도면 · 견적 문의</h2>
       <p class="contact__lead">도면(CAD·PDF)과 현장 위치를 보내 주시면 검토 후 회신드립니다.</p>
+      <p class="contact__note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.4 9 9 0 0 1-3-.5L4 21l1.6-4.4a8.2 8.2 0 0 1-.6-3.1A8.4 8.4 0 0 1 13.5 5 8.4 8.4 0 0 1 21 11.5Z"/></svg>
+        <span>현장 작업 중 통화가 어려울 수 있습니다. 부재 시 <b>문자</b>나 <b>도면 메일</b>로 남겨 주시면 확인 즉시 연락드립니다.</span>
+      </p>
     </div>
 
     <div class="contact__col--left">
