@@ -3,6 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google tag (gtag.js) — Google Ads AW-18582654821 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18582654821"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18582654821');
+</script>
+
 <title>주철강업 유한회사 | 철골 제작 · 현장 설치 전문</title>
 <meta name="description" content="주철강업 유한회사 — 철강구조물공사업 면허. 공장·창고·근린생활시설 철골공사, 구조보강, 엘리베이터 프레임·철골 계단 제작 및 설치. 경기도 용인시 처인구 포곡읍 선장2로 10. 도면·견적 ca6811@naver.com">
 <meta name="theme-color" content="#0B1220">
@@ -899,6 +910,34 @@ button{ font:inherit; color:inherit; }
 (function () {
   'use strict';
 
+  /* ── 구글 애즈 전환 추적 (AW-18582654821 · 담당자 문의) ──
+     전화(tel:)·메일(mailto:)·문자(sms:)로 문의할 때 전환 이벤트를 보냅니다.
+     링크의 기본 동작은 그대로 두고 이벤트만 덧붙이므로 문의 흐름은 바뀌지 않습니다. */
+  var ADS_CONVERSION_SEND_TO = 'AW-18582654821/hjUhCM2klLsdEOWe85xF';
+
+  function sendConversion() {
+    try {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', { 'send_to': ADS_CONVERSION_SEND_TO });
+      }
+    } catch (err) { /* 추적 실패가 문의 동작을 막지 않도록 무시 */ }
+  }
+
+  var CONTACT_HREF = /^(tel:|mailto:|sms:)/i;
+
+  function contactLinkFrom(node) {
+    while (node && node !== document) {
+      if (node.tagName === 'A' && CONTACT_HREF.test(node.getAttribute('href') || '')) return node;
+      node = node.parentNode;
+    }
+    return null;
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = contactLinkFrom(e.target);
+    if (link && link.id !== 'smsLink') sendConversion();
+  }, true);
+
   /* ── 시공 사진: 대표 6장만 먼저, 더 보기로 나머지 9장 펼침 (모바일·PC 공통) ── */
   var grid     = document.getElementById('galleryGrid');
   var cards    = Array.prototype.slice.call(grid.querySelectorAll('.gal__card'));
@@ -1051,6 +1090,8 @@ button{ font:inherit; color:inherit; }
     if (phone) lines.push('연락처: ' + phone);
     if (site)  lines.push('현장: ' + site);
     if (body)  lines.push('내용: ' + body);
+
+    sendConversion();
 
     var link = document.getElementById('smsLink');
     link.href = 'sms:' + SMS_TO + '?&body=' + encodeURIComponent(lines.join('\n'));
